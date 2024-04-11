@@ -137,6 +137,8 @@ namespace drivers{
         zero_default = interpolationResult.second;
 
         m_pwm_pin.write(conversion(f_angle));
+        // m_pwm_pin.write(conversion(20));
+
     };
 
     /** @brief  It converts angle degree to duty cycle for pwm signal. 
@@ -144,7 +146,7 @@ namespace drivers{
      *  @param f_angle    angle degree
      *  \return         duty cycle in interval [0,1]
      */
-    float CSteeringMotor::conversion(float f_angle)
+    float CSteeringMotor::conversion(float f_angle) 
     {
         return (step_value * f_angle + zero_default);
     };

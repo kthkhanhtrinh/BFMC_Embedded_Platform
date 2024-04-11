@@ -106,9 +106,14 @@ namespace brain{
             }
 
             m_state = 1;
+            m_speedingControl.setSpeed(l_speed); // Set the reference speed
+            float c_speed = m_speedingControl.conversion(l_speed);
+            sprintf(b,"ack");    
+            sprintf(b, "Current pwm: %f", c_speed);
 
-            m_speedingControl.setSpeed(-l_speed); // Set the reference speed
-            sprintf(b,"ack");
+
+
+
         }
         else
         {
@@ -137,9 +142,9 @@ namespace brain{
             }
 
             m_state = 2;
-
             m_steeringControl.setAngle(l_angle); // control the steering angle 
             sprintf(b,"ack");
+            // sprintf(b, "%f", l_angle);
         }
         else
         {

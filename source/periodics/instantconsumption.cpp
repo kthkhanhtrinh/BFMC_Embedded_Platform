@@ -119,7 +119,6 @@ namespace periodics{
         float l_rps = m_pin.read_u16()/19859.39;
     
         float l_median = calculateAverageInstantConsumption(l_rps);
-
         if(l_median != 0.0)
         {
             snprintf(buffer, sizeof(buffer), "@6:%.3f;;\r\n", l_median*10);

@@ -69,6 +69,7 @@ namespace drivers{
         step_value = interpolate(-f_speed, speedValuesP, speedValuesN, stepValues, 25);
 
         m_pwm_pin.write(conversion(f_speed));
+
     };
 
     /** @brief  It puts the brushless motor into brake state, 

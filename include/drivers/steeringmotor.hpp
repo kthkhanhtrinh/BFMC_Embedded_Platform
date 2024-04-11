@@ -74,11 +74,12 @@ namespace drivers
             /** @brief PWM output pin */
             PwmOut m_pwm_pin;
             /** @brief 0 default */
-            float zero_default = 0.07672070;
+            float zero_default = 0.104;
             /** @brief ms_period */
-            int8_t ms_period = 20;
+            int8_t ms_period = 14.85;
             /** @brief step_value */
-            float step_value = 0.0009505;
+            // float step_value = 0.0009505;
+            float step_value = 0.00092;
             /** @brief Inferior limit */
             const float m_inf_limit;
             /** @brief Superior limit */
