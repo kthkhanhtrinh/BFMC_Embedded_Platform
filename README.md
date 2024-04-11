@@ -8,4 +8,4 @@ The project contains all the software present on the Nucleo board, together with
 - Architecture prone to features addition
 
 ## The documentation is available in details here:
-[Documentation](https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/embeddedplatform.html) 
+[Documentation](https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/embeddedplatform.html) "# BFMC_Embedded_Platform" 
